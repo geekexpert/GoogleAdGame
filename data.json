@@ -1,0 +1,17 @@
+{
+	"country": 1,
+	"logoUrl": ["autoport-logo.JPG","autoport-logo-JP.JPG","autoport-logo-UK.JPG"],
+	"title": "Cheap Toyota Cars",
+    "featureTxt":"www.autoport.nz",
+	"btnTxt": "Play Audi Game",
+	"reduced": true,
+	"vehicle": {
+		"carTitle": "2017 - Toyota Cars",
+		"carModel": "PHV",
+		"carUrl": "https://images.autoport.net/?Type=1&Id=477266&Index=1&Width=380&UseInitial=true",
+		"innerTxt": "Reduced: $13,000",
+		"price": ["$56,750","Y1000000","P122345"],
+		"kms": "97,000kms"
+	},
+	"aLink": [ "https://www.autoport.nz", "https://www.autoport.nz/used-cars-for-sale/audi","https://www.autoport.nz/used-cars-for-sale/audi/a1/tfsi/listing/477266" ]
+}

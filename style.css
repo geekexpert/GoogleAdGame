@@ -1,0 +1,302 @@
+﻿@import url('https://fonts.googleapis.com/css2?family=PT+Sans&display=swap');
+
+* {
+	font-family: 'PT Sans', sans-serif;
+}
+a {
+    text-decoration: none;
+}
+#road {
+	position: relative;
+	width: 200px;
+	height: 600px;
+	background-image: url(road-img.jpg);
+	animation: moveRoad 2s linear infinite;
+	background-repeat: repeat-y;
+	background-position: 0%;
+	display: inline-block;
+	overflow: hidden;
+	/* border: 3px solid;
+	box-sizing: border-box; */
+}
+
+#vCar {
+	width: 100px;
+	height: 100px;
+	position: relative;
+	top: 0px;
+	left: 0px;
+	background-image: url(villian.png);
+	background-repeat: no-repeat;
+	background-position-x: 50%;
+	background-size: 50% 100%;
+	animation: villainMove 1s linear infinite;
+}
+
+
+/* Animation move road  */
+
+@keyframes moveRoad {
+	0% {
+		background-position-y: 0px;
+	}
+
+	100% {
+		background-position-y: 600px
+	}
+}
+
+@-webkit-keyframes moveRoad {
+	0% {
+		background-position-y: 0px;
+	}
+
+	100% {
+		background-position-y: 600px
+	}
+}
+
+@-moz-keyframes moveRoad {
+	0% {
+		background-position-y: 0px;
+	}
+
+	100% {
+		background-position-y: 600px
+	}
+}
+
+
+/* Animation Villain moves */
+
+@keyframes villainMove {
+	0% {
+		top: -71px;
+	}
+
+	100% {
+		top: 530px;
+	}
+}
+
+@-webkit-keyframes villainMove {
+	0% {
+		top: -71px;
+	}
+
+	100% {
+		top: 530px;
+	}
+}
+
+@-moz-keyframes villainMove {
+	0% {
+		top: -71px;
+	}
+
+	100% {
+		top: 530px;
+	}
+}
+
+#ourCar {
+	position: relative;
+	background-image: url(hero.png);
+	top: 400px;
+	left: 100px;
+	width: 100px;
+	height: 100px;
+	background-size: 50% 100%;
+	background-repeat: no-repeat;
+	background-position-x: 50%;
+}
+
+#score {
+	color: #fff;
+	top: 1px;
+	z-index: 111111;
+	position: absolute;
+	font-size: 20px;
+	right: 1px;
+}
+
+#road {
+	display: none;
+}
+
+.img-wrap-log img {
+    max-height: 39px;
+    position: relative;
+	opacity: 0;
+}
+.rightyy {
+	left: 20px;
+	animation:logAnim 1s 0.5s forwards;
+}
+.leffy {
+left:-20px;
+animation:logAnim 1s 0.5s forwards;
+}
+.start {
+	width: 200px;
+	height: 600px;
+	background: #e4e4e4;
+}
+
+h1 {
+	text-align: center;
+	background: #00aeef;
+	font-size: 20px;
+	padding: 5px 20px;
+	color: #fff;
+	margin: 0;
+	position: relative;
+	top: 30px;
+	left: -200px;
+	animation: lr 1s 0.6s forwards;
+}
+
+.img-wrap-log {
+	display: flex;
+	justify-content: center;
+}
+
+.start {
+	width: 200px;
+	height: 523px;
+	background: #ffffff;
+	position: relative;
+	outline: 1px solid;
+	overflow: hidden;
+}
+
+
+.img-wrap-log {
+	display: flex;
+	justify-content: center;
+	position: relative;
+	/* padding-top: 50px; */
+	padding: 50px 0;
+	padding-bottom: 10px;
+}
+
+
+.game-btn {
+	text-align: center;
+	background: red;
+	color: #fff;
+	font-weight: 600;
+	padding: 5px 10px;
+	position: relative;
+	width: 200px;
+	box-sizing: border-box;
+	top:40px;
+	cursor: pointer;
+	left: 200px;
+	animation: lr 1s 0.8s forwards;
+}
+
+.start-img {
+    width: 200px;
+    z-index: -2;
+    position: relative;
+	left: 0;
+}
+
+.start-back-style {
+	position: absolute;
+	width: 0;
+	height: 0;
+	border-right: 200px solid transparent;
+	bottom: 13px;
+	border-bottom: 115px solid #00aeef;
+	left: 0;
+	padding-bottom: 100px;
+}
+
+.start-back-lower {
+	position: absolute;
+	width: 200px;
+	background: #00aeef;
+	bottom: 0;
+	height: 50px;
+}
+
+img.svg {
+	position: absolute;
+	bottom: 0;
+	z-index: -1;
+}
+
+.vehicle {
+    position: absolute;
+    bottom: 0;
+    color: #fff;
+    width: 200px;
+    height: 210px;
+    z-index: 2;
+	background: #00aeef;
+	left: 200px;
+	animation: lr 1s 0.6s forwards;
+}
+
+h2 {
+    font-size: 18px;
+    margin: 0;
+}
+
+.kms,
+.model {
+	font-size: 12px;
+}
+h2, 
+.model, 
+.kms {
+	padding-left: 4px;
+}
+.reduced {
+	font-size: 14px;
+	background: red;
+	display: inline-block;
+	padding: 2px 5px;
+	position: absolute;
+	top: 0;
+	right: 0;
+}
+
+.price {
+	font-weight: 600;
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	padding-right: 5px;
+}
+.header-line {
+    background: #00aeef;
+    color: #fff;
+    text-align: center;
+    padding: 5px;
+    font-weight: 600;
+	animation: startAnim 1s forwards;
+}
+/* Animation Start */
+
+@keyframes startAnim {
+	100%{
+		letter-spacing: 4px;
+	}
+}
+
+@keyframes logAnim {
+	100%{
+		left: 0;
+		opacity: 1;
+	}
+}
+
+@keyframes lr {
+	100%{
+		left: 0;
+		opacity: 1;
+	}
+}
